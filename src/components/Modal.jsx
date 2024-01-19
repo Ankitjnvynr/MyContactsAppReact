@@ -8,7 +8,7 @@ function Modal({ onClose, isOpen, children }) {
         <>
             {isOpen && (
                 <div className="absolute top-0 w-[100%] h-[100%] flex justify-center items-center backdrop-blur-sm " >
-                    <div className='min-h-[200px] rounded-xl w-[80%] bg-[rgba(255,255,255,0.79)] p-4 m-auto border-yellow '>
+                    <div className='max-w-[350px] min-h-[200px] rounded-xl w-[80%] bg-[rgba(255,255,255,0.79)] p-4 m-auto border-yellow '>
                         <div className="flex justify-end  ">
                             <AiOutlineClose onClick={onClose} className=' self-end cursor-pointer text-2xl' />
                         </div>
